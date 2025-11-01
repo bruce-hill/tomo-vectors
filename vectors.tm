@@ -129,8 +129,7 @@ struct IVec3(x,y,z:Int)
 
 func main()
     >> Vec2(10, 20)
-    >> Vec2(10, 20) + Vec2(100, 100)
-    = Vec2(x=110, y=120)
+    assert Vec2(10, 20) + Vec2(100, 100) == Vec2(x=110, y=120)
     >> Vec3(10, 20, 30)
     >> Vec2.ZERO
 
